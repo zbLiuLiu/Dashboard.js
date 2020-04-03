@@ -22,6 +22,11 @@
 ## Panel.js的API
 Panel.js拥有~~其实一点也不~~丰富的API。
 
+|  表头   | 表头  |
+|  ----  | ----  |
+| 单元格  | 单元格 |
+| 单元格  | 单元格 |
+
 |API名称|API类型|API介绍|API示例|API默认值|
 |----|----|----|
 |panel(id,duration)|JavaScript Function|id: 需要绑定的&lt;canvas>标签的id。<br/>duration: 进入动画的时长。|`panel("canvas",1000)`|`无`|
