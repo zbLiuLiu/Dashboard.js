@@ -22,13 +22,8 @@
 ## Panel.js的API
 Panel.js拥有~~其实一点也不~~丰富的API。
 
-|  表头   | 表头  |
-|  ----  | ----  |
-| 单元格  | 单元格 |
-| 单元格  | 单元格 |
-
 |API名称|API类型|API介绍|API示例|API默认值|
-|----|----|----|
+|----|----|----|----|----|
 |panel(id,duration)|JavaScript Function|id: 需要绑定的&lt;canvas>标签的id。<br/>duration: 进入动画的时长。|`panel("canvas",1000)`|`无`|
 |data-text-color|HTML Attribute|定义仪表盘字体颜色。|`<canvas data-text-color="#000000"></canvas>`|`"#000000"`|
 |data-background-color|HTML Attribute|定义仪表盘进度条的背景颜色。|`<canvas data-background-color="#BFBFBF"></canvas>`|`"#BFBFBF"`|
