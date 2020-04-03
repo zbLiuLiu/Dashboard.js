@@ -33,5 +33,9 @@ Panel.js拥有~~其实一点也不~~丰富的API。
 |data-pre-text|HTML Attribute|定义仪表盘的进度前面显示的文本。|`<canvas data-pre-text=""></canvas>`|`""`|
 |data-post-text|HTML Attribute|定义仪表盘的进度后面显示的文本。|`<canvas data-post-text="%"></canvas>`|`""`|
 
+## 使用方法
+**直接下载下载** [Panel.min.js](https://github.com/zbLiuLiu/Panel.js/blob/master/dist/Panel.min.js "Panel.min.js")并在页面中引入。
+**使用CDN** 暂无CDN，将来会上传hhh
+
 ## 关于作者
 ❤ 欢迎访问我的小站哦：[一只zbLiuLiu的小天地](https://zbliuliu.top "一只zbLiuLiu的小天地")
