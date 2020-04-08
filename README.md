@@ -27,8 +27,6 @@
 
 Dashboard.js拥有~~其实一点也不~~丰富的API。
 
-//width height data-label data-score data-color data-background-color data-text-color data-pre-text data-post-text data-bar-width data-label-size data-score-size data-line-space
-
 |API名称|API类型|API介绍|API示例|API默认值|
 |----|----|----|----|----|
 |panel(id,duration)|JavaScript Function|id: 需要绑定的&lt;canvas>标签的id。<br/>duration: 进入动画的时长。|`panel("canvas",1000)`|`无`|
@@ -46,6 +44,7 @@ Dashboard.js拥有~~其实一点也不~~丰富的API。
 |data-score-size|HTML Attribute|仪表盘的进度文字的大小，**只能是数字**，单位为px。|`<canvas data-score-size="50"></canvas>`|`50`|
 |data-line-space|HTML Attribute|仪表盘的标签文字与进度文字的宽度，**只能是数字**。|`<canvas data-line-space="10"></canvas>`|`((data-score-size)+(data-label-space))/2*0.382`|
 |font-family|CSS Style|仪表盘的文字字体字体。|`font-family: "Arial"`|`---`|
+
 带*为必填参数。
 
 ## 使用方法
