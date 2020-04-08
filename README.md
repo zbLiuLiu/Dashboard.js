@@ -1,5 +1,5 @@
 # Dashboard.js
-一个简单的JS+canvas的仪表盘插件，你只需要在&lt;canvas>中写好id和属性，在&lt;script>中调用一下panel函数即可轻松绘制一个仪表盘！你还可以仅仅使用jQuery、Vue.js甚至document.getElementById(id).setAttribute()来更新&lt;canvas>的参数即可修改数据和样式！
+一个简单的JS+canvas的仪表盘插件，你只需要在&lt;canvas>中写好id和属性，在&lt;script>中调用一下dashboard函数即可轻松绘制一个仪表盘！你还可以仅仅使用jQuery、Vue.js甚至document.getElementById(id).setAttribute()来更新&lt;canvas>的参数即可修改数据和样式！
 
 ## 为什么要制作这个插件
 我的大学报的校企合作专业，其中企业方给我们布置了一个考试，要求仿照Lenovo Learning System的教师页面做一个页面+页面相关的后端API，不能使用任何框架，指定使用HTML+CSS+JS做前端，PHP+MySQL做后端。其中页面中有四个仪表盘，因此我就用8个小时的考试时间中的约一半多一点的时间做了这个插件。然后略微修改之后便成了你现在所看到的插件的第一个版本。
@@ -14,7 +14,7 @@
     <canvas id="canvas" width="300" height="300" data-score="50"></canvas>
     <script src="Panel.js"></script>
     <script>
-    	panel("canvas", 1000)
+    	dashboard("canvas", 1000)
     </script>
 
 只需要加入上面5行代码，你的网页上就会出现一个仪表盘！

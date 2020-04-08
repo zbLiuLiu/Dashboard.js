@@ -4,14 +4,14 @@
     } else if (typeof define === 'function' && define.amd) {
         define(factory)
     } else {
-        root['panel'] = factory()
+        root['dashboard'] = factory()
     }
 })(this, function () {
   var version = "1.0.0"
   var DEBUG = true
   if(DEBUG){
-    console.group("Panel.js APIs:")
-    console.log("panel(id,duration):\r\n\tid: 需要绑定的<canvas>标签的id。\r\n\tduration: 进入动画的时长。")
+    console.group("Dashboard.js APIs:")
+    console.log("dashboard(id,duration):\r\n\tid: 需要绑定的<canvas>标签的id。\r\n\tduration: 进入动画的时长。")
     console.log("data-text-color: 需要绑定的<canvas>标签的属性，定义仪表盘字体颜色。")
     console.log("data-background-color: 需要绑定的<canvas>标签的属性，定义仪表盘进度条的背景颜色。")
     console.log("data-color: 需要绑定的<canvas>标签的属性，定义仪表盘进度条的前景颜色。")
@@ -22,8 +22,8 @@
     console.log("")
     console.log("原则上支持所有MVVM框架更新属性，但在MVVM框架绑定元素前绑定<canvas>标签可能会导致问题。")
     console.log("")
-    console.groupEnd("Panel.js详解")
-    console.log("Panel.js v"+version+" @zbLiuLiu zbliuliu.top 2020-现在")
+    console.groupEnd("Dashboard.js详解")
+    console.log("Dashboard.js v"+version+" @zbLiuLiu zbliuliu.top 2020-现在")
   }
   
   function a (id, dur) {
