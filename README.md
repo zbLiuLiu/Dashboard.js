@@ -12,7 +12,7 @@
 
 ## 如何使用Dashboard.js？
     <canvas id="canvas" width="300" height="300" data-score="50"></canvas>
-    <script src="Panel.js"></script>
+    <script src="Dashboard.js"></script>
     <script>
     	dashboard("canvas", 1000)
     </script>
