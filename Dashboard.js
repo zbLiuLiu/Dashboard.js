@@ -40,8 +40,8 @@
 
     var canvas = document.getElementById(id),
       ctx = canvas.getContext('2d'),
-      cWidth = canvas.width,
-      cHeight = canvas.height,
+      cWidth = Number(canvas.width),
+      cHeight = Number(canvas.height),
       label = (canvas.attributes['data-label']||{"value":""}).value,
       score = Number((canvas.attributes['data-score']||{"value":"0"}).value),
       color = (canvas.attributes['data-color']||{"value":"#000000"}).value,
@@ -49,7 +49,7 @@
       textColor = (canvas.attributes['data-text-color']||{"value":"#000000"}).value,
       pre_text=(canvas.attributes['data-pre-text']||{"value":""}).value,
       post_text=(canvas.attributes['data-post-text']||{"value":""}).value,
-      radius = 140, //圆的半径
+      barWidth = Number((canvas.attributes['data-bar-width']||{"value":10}).value),
       deg0 = Math.PI / 9, //每一格20度
       blocks = 14,
       mum = 1, //数字步长
@@ -62,6 +62,7 @@
 
     var angle = 0, 
       credit = 0, 
+      radius = (((cWidth>cHeight)?cHeight:cWidth)/2)-barWidth, //圆的半径
       mumsPerFrame = score / framesNumber
 
     var drawFrame = function () {
@@ -77,6 +78,8 @@
         pre_text = (canvas.attributes['data-pre-text']||{"value":""}).value
       if (canvas.attributes['data-post-text']&&canvas.attributes['data-post-text'].value !== post_text)
         post_text = (canvas.attributes['data-post-text']||{"value":""}).value
+      if (canvas.attributes['data-bar-width']&&canvas.attributes['data-bar-width'].value !== barWidth)
+        barWidth = Number((canvas.attributes['data-bar-width']||{"value":10}).value)
       if (canvas.attributes['data-score']&&Number(canvas.attributes['data-score'].value) !== score) {
         score = Number((canvas.attributes['data-score']||{"value":"0"}).value)
         angle = 0 

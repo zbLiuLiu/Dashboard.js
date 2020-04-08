@@ -32,6 +32,7 @@ Dashboard.js拥有~~其实一点也不~~丰富的API。
 |data-score|HTML Attribute|定义仪表盘的进度，范围在0-100之间，**只能是数字**，更新会导致重新播放进入动画。|`<canvas data-score="0"></canvas>`|`0`|
 |data-pre-text|HTML Attribute|定义仪表盘的进度前面显示的文本。|`<canvas data-pre-text=""></canvas>`|`""`|
 |data-post-text|HTML Attribute|定义仪表盘的进度后面显示的文本。|`<canvas data-post-text="%"></canvas>`|`""`|
+|data-bar-width|HTML Attribute|定义仪表盘的进度条的宽度，**只能是数字**。|`<canvas data-bar-width="10"></canvas>`|`10`|
 
 ## 使用方法
 **直接下载下载** [Dashboard.min.js](https://github.com/zbLiuLiu/Dashboard.js/blob/master/dist/Dashboard.min.js "Panel.min.js")并在页面中引入。
