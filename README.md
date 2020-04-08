@@ -34,9 +34,9 @@ Dashboard.js拥有~~其实一点也不~~丰富的API。
 |height*|HTML Attribute|画板高度。|`<canvas height="300"></canvas>`|`---`|
 |data-label|HTML Attribute|仪表盘的上标签。|`<canvas data-label="标签"></canvas>`|`""`|
 |data-score|HTML Attribute|仪表盘的进度，范围在0-100之间，**只能是数字**。|`<canvas data-score="0"></canvas>`|`0`|
-|data-color|HTML Attribute|仪表盘进度条的前景颜色。|`<canvas data-color="#000000"></canvas>`|`canvas.style.color&#124;&#124;"#000000"`|
-|data-background-color|HTML Attribute|仪表盘进度条的背景颜色。|`<canvas data-background-color="#BFBFBF"></canvas>`|`canvas.style.backgroundColor&#124;&#124;"#BFBFBF"`|
-|data-text-color|HTML Attribute|仪表盘字体颜色。|`<canvas data-text-color="#000000"></canvas>`|`canvas.style.color&#124;&#124;"#000000"`|
+|data-color|HTML Attribute|仪表盘进度条的前景颜色。|`<canvas data-color="#000000"></canvas>`|`canvas.style.color` &#124;&#124; `"#000000"`|
+|data-background-color|HTML Attribute|仪表盘进度条的背景颜色。|`<canvas data-background-color="#BFBFBF"></canvas>`|`canvas.style.backgroundColor` &#124;&#124; `"#BFBFBF"`|
+|data-text-color|HTML Attribute|仪表盘字体颜色。|`<canvas data-text-color="#000000"></canvas>`|`canvas.style.color` &#124;&#124; `"#000000"`|
 |data-pre-text|HTML Attribute|仪表盘的进度前面显示的文本。|`<canvas data-pre-text=""></canvas>`|`""`|
 |data-post-text|HTML Attribute|仪表盘的进度后面显示的文本。|`<canvas data-post-text="%"></canvas>`|`""`|
 |data-bar-width|HTML Attribute|仪表盘的进度条的宽度，**只能是数字**。|`<canvas data-bar-width="10"></canvas>`|`10`|
