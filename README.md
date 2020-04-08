@@ -22,17 +22,26 @@
 ## Dashboard.js的API
 Dashboard.js拥有~~其实一点也不~~丰富的API。
 
+//width height data-label data-score data-color data-background-color data-text-color data-pre-text data-post-text data-bar-width data-label-size data-score-size data-line-space
+
 |API名称|API类型|API介绍|API示例|API默认值|
 |----|----|----|----|----|
 |panel(id,duration)|JavaScript Function|id: 需要绑定的&lt;canvas>标签的id。<br/>duration: 进入动画的时长。|`panel("canvas",1000)`|`无`|
-|data-text-color|HTML Attribute|定义仪表盘字体颜色。|`<canvas data-text-color="#000000"></canvas>`|`"#000000"`|
-|data-background-color|HTML Attribute|定义仪表盘进度条的背景颜色。|`<canvas data-background-color="#BFBFBF"></canvas>`|`"#BFBFBF"`|
-|data-color|HTML Attribute|定义仪表盘进度条的前景颜色。|`<canvas data-color="#000000"></canvas>`|`"#000000"`|
-|data-label|HTML Attribute|定义仪表盘的上标签。|`<canvas data-label="标签"></canvas>`|`""`|
-|data-score|HTML Attribute|定义仪表盘的进度，范围在0-100之间，**只能是数字**，更新会导致重新播放进入动画。|`<canvas data-score="0"></canvas>`|`0`|
-|data-pre-text|HTML Attribute|定义仪表盘的进度前面显示的文本。|`<canvas data-pre-text=""></canvas>`|`""`|
-|data-post-text|HTML Attribute|定义仪表盘的进度后面显示的文本。|`<canvas data-post-text="%"></canvas>`|`""`|
-|data-bar-width|HTML Attribute|定义仪表盘的进度条的宽度，**只能是数字**。|`<canvas data-bar-width="10"></canvas>`|`10`|
+|width*|HTML Attribute|画板宽度。|`<canvas width="300"></canvas>`|`---`|
+|height*|HTML Attribute|画板高度。|`<canvas height="300"></canvas>`|`---`|
+|data-label|HTML Attribute|仪表盘的上标签。|`<canvas data-label="标签"></canvas>`|`""`|
+|data-score|HTML Attribute|仪表盘的进度，范围在0-100之间，**只能是数字**。|`<canvas data-score="0"></canvas>`|`0`|
+|data-color|HTML Attribute|仪表盘进度条的前景颜色。|`<canvas data-color="#000000"></canvas>`|`canvas.style.color||"#000000"`|
+|data-background-color|HTML Attribute|仪表盘进度条的背景颜色。|`<canvas data-background-color="#BFBFBF"></canvas>`|`canvas.backgroundColor.color||"#BFBFBF"`|
+|data-text-color|HTML Attribute|仪表盘字体颜色。|`<canvas data-text-color="#000000"></canvas>`|`canvas.style.color||"#000000"`|
+|data-pre-text|HTML Attribute|仪表盘的进度前面显示的文本。|`<canvas data-pre-text=""></canvas>`|`""`|
+|data-post-text|HTML Attribute|仪表盘的进度后面显示的文本。|`<canvas data-post-text="%"></canvas>`|`""`|
+|data-bar-width|HTML Attribute|仪表盘的进度条的宽度，**只能是数字**。|`<canvas data-bar-width="10"></canvas>`|`10`|
+|data-label-size|HTML Attribute|仪表盘的标签文字的大小，**只能是数字**，单位为px。|`<canvas data-label-size="25"></canvas>`|`25`|
+|data-score-size|HTML Attribute|仪表盘的进度文字的大小，**只能是数字**，单位为px。|`<canvas data-score-size="50"></canvas>`|`50`|
+|data-line-space|HTML Attribute|仪表盘的标签文字与进度文字的宽度，**只能是数字**。|`<canvas data-line-space="10"></canvas>`|`((data-score-size)+(data-label-space))/2*0.382`|
+|font-family|CSS Style|仪表盘的文字字体字体。|`font-family: "Arial"`|`---`|
+带*为必填参数。
 
 ## 使用方法
 **直接下载下载** [Dashboard.min.js](https://github.com/zbLiuLiu/Dashboard.js/blob/master/dist/Dashboard.min.js "Panel.min.js")并在页面中引入。
